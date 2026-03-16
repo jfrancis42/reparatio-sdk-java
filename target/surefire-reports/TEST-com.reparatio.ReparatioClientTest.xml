@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reparatio.ReparatioClientTest" time="0.407" tests="44" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.reparatio.ReparatioClientTest" time="0.453" tests="44" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-26-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/jfrancis/reparatio-sdk-java/target/surefire/surefirebooter-20260314044922568_3.jar /home/jfrancis/reparatio-sdk-java/target/surefire 2026-03-14T04-49-22_491-jvmRun1 surefire-20260314044922568_1tmp surefire_0-20260314044922568_2tmp"/>
+    <property name="sun.java.command" value="/home/jfrancis/reparatio-sdk-java/target/surefire/surefirebooter-20260315170019436_3.jar /home/jfrancis/reparatio-sdk-java/target/surefire 2026-03-15T17-00-19_348-jvmRun1 surefire-20260315170019436_1tmp surefire_0-20260315170019436_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/jfrancis/reparatio-sdk-java/target/test-classes:/home/jfrancis/reparatio-sdk-java/target/classes:/home/jfrancis/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/home/jfrancis/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/jfrancis/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/jfrancis/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/jfrancis/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/jfrancis/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/jfrancis/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/jfrancis/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/home/jfrancis/.m2/repository/org/json/json/20240303/json-20240303.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,13 +27,13 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/jfrancis/reparatio-sdk-java/target/surefire/surefirebooter-20260314044922568_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/jfrancis/reparatio-sdk-java/target/surefire/surefirebooter-20260315170019436_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="26-ea+17-Ubuntu-1"/>
     <property name="user.name" value="jfrancis"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.17.0-14-generic"/>
+    <property name="os.version" value="6.17.0-19-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -54,48 +54,48 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="jsonArray_singleItem" classname="com.reparatio.ReparatioClientTest" time="0.03"/>
-  <testcase name="multipart_mixedParts" classname="com.reparatio.ReparatioClientTest" time="0.025"/>
-  <testcase name="mergeOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.003"/>
-  <testcase name="jsonArray_multiItems" classname="com.reparatio.ReparatioClientTest" time="0.003"/>
-  <testcase name="jsonArray_quotesInValue" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
-  <testcase name="result_nullWarning" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
-  <testcase name="stripExt_dotAtStart" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
-  <testcase name="multipart_crlf" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="filename_fallbackWhenNoFilenameParam" classname="com.reparatio.ReparatioClientTest" time="0.012"/>
-  <testcase name="exception_authSubclass" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="jsonArray_singleItem" classname="com.reparatio.ReparatioClientTest" time="0.026"/>
+  <testcase name="multipart_mixedParts" classname="com.reparatio.ReparatioClientTest" time="0.026"/>
+  <testcase name="mergeOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="jsonArray_multiItems" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="jsonArray_quotesInValue" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="result_nullWarning" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="stripExt_dotAtStart" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="multipart_crlf" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="filename_fallbackWhenNoFilenameParam" classname="com.reparatio.ReparatioClientTest" time="0.004"/>
+  <testcase name="exception_authSubclass" classname="com.reparatio.ReparatioClientTest" time="0.011"/>
   <testcase name="exception_statusCode" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
   <testcase name="exception_fileTooLargeSubclass" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="convertOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="raiseForStatus_500_generic" classname="com.reparatio.ReparatioClientTest" time="0.012"/>
-  <testcase name="batchOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="raiseForStatus_422_parse" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
-  <testcase name="me_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
-  <testcase name="multipart_fileField" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="multipart_textField" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
-  <testcase name="raiseForStatus_nonJsonBody" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="convertOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="raiseForStatus_500_generic" classname="com.reparatio.ReparatioClientTest" time="0.01"/>
+  <testcase name="batchOptions_defaults" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="raiseForStatus_422_parse" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="me_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="multipart_fileField" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="multipart_textField" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="raiseForStatus_nonJsonBody" classname="com.reparatio.ReparatioClientTest" time="0.004"/>
   <testcase name="stripExt_normal" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
   <testcase name="jsonArray_empty" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
   <testcase name="constructor_stripsTrailingSlash" classname="com.reparatio.ReparatioClientTest" time="0.202"/>
-  <testcase name="raiseForStatus_401_auth" classname="com.reparatio.ReparatioClientTest" time="0.003"/>
+  <testcase name="raiseForStatus_401_auth" classname="com.reparatio.ReparatioClientTest" time="0.013"/>
   <testcase name="raiseForStatus_402_plan" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="raiseForStatus_403_auth" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="inspect_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="raiseForStatus_403_auth" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="inspect_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.005"/>
   <testcase name="filename_fallbackWhenAbsent" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="jsonArray_null" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="jsonArray_null" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
   <testcase name="readFile_missing" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="stripExt_noExt" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="result_accessors" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="exception_planSubclass" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="stripExt_noExt" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
+  <testcase name="result_accessors" classname="com.reparatio.ReparatioClientTest" time="0.003"/>
+  <testcase name="exception_planSubclass" classname="com.reparatio.ReparatioClientTest" time="0.004"/>
   <testcase name="raiseForStatus_413_size" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
   <testcase name="exception_parseSubclass" classname="com.reparatio.ReparatioClientTest" time="0.0"/>
-  <testcase name="constructor_readsEnvApiKey" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="constructor_readsEnvApiKey" classname="com.reparatio.ReparatioClientTest" time="0.003"/>
   <testcase name="raiseForStatus_200_ok" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="constructor_explicitKeyWins" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="append_requiresTwoFiles(Path)" classname="com.reparatio.ReparatioClientTest" time="0.006"/>
-  <testcase name="multipart_bodyContainsBoundary" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="multipart_boundaryUnique" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
-  <testcase name="formats_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
+  <testcase name="constructor_explicitKeyWins" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="append_requiresTwoFiles(Path)" classname="com.reparatio.ReparatioClientTest" time="0.036"/>
+  <testcase name="multipart_bodyContainsBoundary" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
+  <testcase name="multipart_boundaryUnique" classname="com.reparatio.ReparatioClientTest" time="0.006"/>
+  <testcase name="formats_jsonParsed" classname="com.reparatio.ReparatioClientTest" time="0.004"/>
   <testcase name="readFile_success(Path)" classname="com.reparatio.ReparatioClientTest" time="0.002"/>
   <testcase name="filename_fromContentDisposition" classname="com.reparatio.ReparatioClientTest" time="0.001"/>
 </testsuite>

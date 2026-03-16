@@ -106,6 +106,25 @@ Table name is always `data`. Options via `QueryOptions`.
 | `ReparatioException.ParseException` | 422 | `ReparatioException` |
 | `ReparatioException` | other 4xx/5xx | `RuntimeException` |
 
+---
+
+## Running the Examples
+
+The repository includes 15 runnable examples covering every API method.
+
+```bash
+# build the JAR
+mvn -q package -DskipTests
+
+# compile and run all examples
+JSON_JAR=~/.m2/repository/org/json/json/20240303/json-20240303.jar
+javac -cp "target/reparatio-sdk-java-0.1.0.jar:$JSON_JAR" examples/Examples.java -d examples/
+REPARATIO_API_KEY=EXAMPLE-EXAMPLE-EXAMPLE \
+java -cp "examples:target/reparatio-sdk-java-0.1.0.jar:$JSON_JAR" Examples
+```
+
+Set `REPARATIO_API_KEY` to your API key to run the examples against the live API.
+
 ## License
 
 MIT — © Ordo Artificum LLC

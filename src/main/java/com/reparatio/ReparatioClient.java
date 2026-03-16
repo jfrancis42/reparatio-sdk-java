@@ -77,6 +77,7 @@ public class ReparatioClient implements AutoCloseable {
         if (!key.isEmpty()) hdrs.put("X-API-Key", key);
         this.defaultHeaders = Collections.unmodifiableMap(hdrs);
         this.http = HttpClient.newBuilder()
+                .version(HttpClient.Version.HTTP_1_1)
                 .connectTimeout(timeout)
                 .build();
     }
