@@ -13,7 +13,29 @@
   <name>Reparatio Java SDK</name>
   <description>Java SDK for the Reparatio data conversion API</description>
   <url>https://github.com/jfrancis42/reparatio-sdk-java</url>
-  <licenses><license><name>MIT</name></license></licenses>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>Ordo Artificum LLC</name>
+      <email>support@reparatio.app</email>
+      <organization>Ordo Artificum LLC</organization>
+      <organizationUrl>https://reparatio.app</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:git://github.com/jfrancis42/reparatio-sdk-java.git</connection>
+    <developerConnection>scm:git:ssh://github.com/jfrancis42/reparatio-sdk-java.git</developerConnection>
+    <url>https://github.com/jfrancis42/reparatio-sdk-java</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -43,6 +65,54 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.2.5</version>
+      </plugin>
+      <!-- Generate -sources.jar (required by Maven Central) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals><goal>jar-no-fork</goal></goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- Generate -javadoc.jar (required by Maven Central) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.6.3</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals><goal>jar</goal></goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- GPG signing (required by Maven Central) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-gpg-plugin</artifactId>
+        <version>3.2.2</version>
+        <executions>
+          <execution>
+            <id>sign-artifacts</id>
+            <phase>verify</phase>
+            <goals><goal>sign</goal></goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- Central Portal publishing (replaces legacy OSSRH deploy) -->
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.5.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
+          <autoPublish>false</autoPublish>
+        </configuration>
       </plugin>
     </plugins>
   </build>
